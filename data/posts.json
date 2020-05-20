@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "title": "Artículo 1",
+        "slug": "articulo-1",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat odio voluptas saepe debitis? Culpa officiis maiores repellendus cum rem, nulla quibusdam!"
+    },
+    {
+        "id": 2,
+        "title": "Artículo 2",
+        "slug": "articulo-2",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat odio voluptas saepe debitis? Culpa officiis maiores repellendus cum rem, nulla quibusdam!"
+    },
+    {
+        "id": 3,
+        "title": "Artículo 3",
+        "slug": "articulo-3",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat odio voluptas saepe debitis? Culpa officiis maiores repellendus cum rem, nulla quibusdam!"
+    },
+    {
+        "id": 4,
+        "slug": "este-es-otro-articulo",
+        "title": "Este es otro artículo",
+        "content": "Este es el contenido "
+    }
+]
