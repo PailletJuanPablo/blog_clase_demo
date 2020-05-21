@@ -1,9 +1,13 @@
-- Recibir peticiones y devolver respuestas
+Función principal del servidor es **recibir peticiones y devolver respuestas**
 
-* Petición desde el cliente - Ruta o recurso al que desea acceder - Método o verbo que utiliza (POST) - Datos (body, query params ?dato1=1&dato2=1adsdas)
+### Flujo de datos en Express
 
-* 1. Recibe petición y verifica en al app.js que esté funcionando
-* 2. Verifica ruta base app.use('productos') app.use('categorias')
-* 3. Se envía la petición a router - router.get - router.post - Middleware usuario logueado - Si el usuario está logueado, puede continuar al controller
-* 4. Se envía la petición al controlador
-* 5. Controlador (req, res) termina devolviendo una respuesta. - La respuesta va a ser una vista
+1. Petición (**request**) desde el cliente. Contendrá
+   - **Ruta o recurso** al que desea acceder
+   - **Método o verbo** que utiliza
+   - **Datos** (body, parámetros de query)
+   - **Encabezados**
+2. Servidor recibe petición y verifica si existe path base de ruta o recurso en _app.use(Router)_, en el caso de que exista, envía petición al **router**
+
+3. **Router** recibe **request** y verifica si existe la ruta (path) completa con el método. En el caso de que sí enviará petición al **controller**. Si existen **middlewares**, estos serán invocados antes de enviarla.
+4. **Controller** recibe la **request**, centraliza la lógica de negocio correspondiente y termina devolviendo respuesta (**res**) , como una vista, archivo, text, etc.
